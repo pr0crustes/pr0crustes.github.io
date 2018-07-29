@@ -1,7 +1,7 @@
 <package>
 	<id>me.pr0crustes.colorbook</id>
 	<name>SmoothTable</name>
-	<version>0.0.1-1</version>
+	<version>0.0.2-1</version>
 	<compatibility>
 		<firmware>
 		    <miniOS>8.X.X</miniOS>
