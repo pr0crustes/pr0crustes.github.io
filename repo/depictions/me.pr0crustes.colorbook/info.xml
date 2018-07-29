@@ -17,6 +17,7 @@
 	<screenshots>
 	</screenshots>
 	<changelog>
+		<change>Fixed bugs, added random option.</change>
 		<change>Initial release, possibly full of small bugs.</change>
 	</changelog>
 	<links>
