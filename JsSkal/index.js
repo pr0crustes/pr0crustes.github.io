@@ -47,8 +47,21 @@ function doIt() {
     var inInteval = full.multiply(255);
 
     var canvas = document.getElementById("canvas_image");
-    canvas.height = 360;
-    canvas.width = 360;
+
+    // canvas.style.width='100%';
+    // canvas.style.height='100%';
+    // canvas.width  = canvas.offsetWidth;
+    // canvas.height = canvas.offsetHeight;
+
+    var height = window.innerHeight;
+    var widht = window.innerWidth;
+
+    var size = height < widht ? height : widht;
+    size = size * 0.5;
+
+    canvas.width = size;
+    canvas.height = size;
+    
     canvas.getContext("2d").imageSmoothingEnabled = false;
 
     nj.images.save(inInteval, canvas);
