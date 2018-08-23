@@ -17,9 +17,19 @@
             <h3>A JavaScript Version of <a href="https://github.com/pr0crustes/Pyskal">Pyskal</a></h3>
 
             <div class="group border">
-                <p>Input:</p>
-                <input id="text_input" type="text" name="text_input">
+                <h4>WHat is it?</h4>
+                <p>JsSkal is a client-side web page that is able to transform text into a image, in a non-reversible process.</p>
                 <br>
+                <h4>How does it work? (For Nerds)</h4>
+                <p>First, a hash algorithm is used, hashing the text input into a hex string.</p>
+                <p>The hash is then used to set each pixel color, creating the image.</p>
+            </div>
+            <br>
+            <div class="group border">
+                <p>
+                    Input:  
+                    <input id="text_input" type="text" name="text_input">
+                </p>
                 <br>
                 <canvas height="0" width="0" id="canvas_image"></canvas>
             </div>

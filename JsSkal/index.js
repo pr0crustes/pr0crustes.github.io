@@ -10,11 +10,21 @@ function linkHandlers() {
     document.getElementById("text_input").oninput = doIt;
 }
 
+function mirror_array(a) {
+    var flip_up = nj.flip(a, 0);
+    var flip_lr = nj.flip(a, 1);
+    var flip_both = nj.flip(flip_up, 1);
+    var upper = nj.concatenate(flip_up, flip_both);
+    var bottom = nj.concatenate(a, flip_lr);
+    return nj.concatenate(upper.T, bottom.T).T;
+}
+
 function doIt() {
     var text = document.getElementById("text_input").value.trim();
     if (text === "") {
         return;
     }
+    // Hashed 2 times
     var hexHash1 = MD5(text);
     var hexHash2 = MD5(hexHash1);
 
@@ -35,23 +45,10 @@ function doIt() {
     binaryList.push(0);
 
     var array = nj.array(binaryList).reshape(6, 6);
-
-    var flip_up = nj.flip(array, 0);
-    var flip_lr = nj.flip(array, 1);
-    var flip_both = nj.flip(flip_up, 1);
-
-    var upper = nj.concatenate(flip_up, flip_both);
-    var bottom = nj.concatenate(array, flip_lr);
-
-    var full = nj.concatenate(upper.T, bottom.T).T;
-    var inInteval = full.multiply(255);
+    var mirred = mirror_array(array);
+    var inInteval = mirred.multiply(255);
 
     var canvas = document.getElementById("canvas_image");
-
-    // canvas.style.width='100%';
-    // canvas.style.height='100%';
-    // canvas.width  = canvas.offsetWidth;
-    // canvas.height = canvas.offsetHeight;
 
     var height = window.innerHeight;
     var widht = window.innerWidth;
@@ -63,6 +60,7 @@ function doIt() {
     canvas.height = size;
     
     canvas.getContext("2d").imageSmoothingEnabled = false;
+    canvas.scrollIntoView();
 
     nj.images.save(inInteval, canvas);
 }
