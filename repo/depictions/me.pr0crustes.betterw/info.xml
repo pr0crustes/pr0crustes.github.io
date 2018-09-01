@@ -1,23 +1,23 @@
 <package>
-	<id>me.pr0crustes.notblue</id>
-	<name>NotBlue/name>
+	<id>me.pr0crustes.betterw</id>
+	<name>BetterW</name>
 	<version>1.0.0-1</version>
 	<compatibility>
 		<firmware>
-			<miniOS>8.X.X</miniOS>
+			<miniOS>10.X.X</miniOS>
 			<maxiOS>11.X.X</maxiOS>
 			<otherVersions>unconfirmed</otherVersions>
 		</firmware>
 	</compatibility>
 	<dependencies></dependencies>
 	<descriptionlist>
-		<description>Prevent others from seeing when you read whatsapp messages!</description>
+		<description>A bunch of whatsapp features!</description>
 	</descriptionlist>	
 	<changelog>
 		<change>first release</change>
 	</changelog>
 	<links>
 		<name>Source Code</name>
-		<url>https://github.com/pr0crustes/NotBlue</url>
+		<url>https://github.com/pr0crustes/BetterW</url>
 	</links>
 </package>
