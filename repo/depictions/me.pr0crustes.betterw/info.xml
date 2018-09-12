@@ -4,17 +4,17 @@
 	<version>1.0.2-1</version>
 	<compatibility>
 		<firmware>
-			<miniOS>10.X.X</miniOS>
-			<maxiOS>11.X.X</maxiOS>
+			<miniOS>10.0.0</miniOS>
+			<maxiOS>11.3.1</maxiOS>
 			<otherVersions>unconfirmed</otherVersions>
 		</firmware>
 	</compatibility>
 	<dependencies></dependencies>
 	<descriptionlist>
-		<description>A bunch of whatsapp features: <br/> - No Read Receipt, that prevents others from seeing when you read a message, but still allowing you to see when others read yours. <br/> 2 - Who Is Online (BETA), that allows you to see who is online, drawing a green or red circle around their profile picture. <br/> 2.1 - As Dot, replaces the Who Is Online indicator with a dot. Who Is Online needs to be enabled. <br/> 3 - Confirm Call, that asks you to confirm your desire to call another user, preventing accidental voice / video calls. <br/>   4 - Don't Delete (BETA), will make so that when someone deletes a message, it does not delete in your device, adding a alert at the top of the message, alerting that the message was saved from oblivion. <br/>   5 - Global Support, adds whatsapp support to ipad | ipod. Should be enabled in settings. <br/>   6 - No Delete Limit, removing the time limit to delete a message. <br/> </description>
+		<description>A bunch of whatsapp features: - No Read Receipt, that prevents others from seeing when you read a message, but still allowing you to see when others read yours. 2 - Who Is Online (BETA), that allows you to see who is online, drawing a green or red circle around their profile picture. 2.1 - As Dot, replaces the Who Is Online indicator with a dot. Who Is Online needs to be enabled. 3 - Confirm Call, that asks you to confirm your desire to call another user, preventing accidental voice / video calls.   4 - Don't Delete (BETA), will make so that when someone deletes a message, it does not delete in your device, adding a alert at the top of the message, alerting that the message was saved from oblivion.   5 - Global Support, adds whatsapp support to ipad | ipod. Should be enabled in settings.   6 - No Delete Limit, removing the time limit to delete a message. </description>
 	</descriptionlist>	
 	<changelog>
-		<change>Features: <br/> - Added As Dot option to Who Is Online. <br/> - Added Global Support, making whatsapp work in ipad / ipod. <br/> - Added No Delete Limit, removing the time limit to delete a message. <br/> Fixes: <br/> - Fixed a bug where Confirm Call could be bypassed. (Does not cover contacts app yet). <br/> - Fixed one of the bugs with Who Is Calling, more reliable now, but still not perfect. </change>
+		<change>Features: - Added As Dot option to Who Is Online. - Added Global Support, making whatsapp work in ipad / ipod. - Added No Delete Limit, removing the time limit to delete a message. Fixes: - Fixed a bug where Confirm Call could be bypassed. (Does not cover contacts app yet). - Fixed one of the bugs with Who Is Calling, more reliable now, but still not perfect. </change>
 	</changelog>
 	<links>
 		<name>Source Code</name>

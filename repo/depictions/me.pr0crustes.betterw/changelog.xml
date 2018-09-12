@@ -1,7 +1,7 @@
 <changelog>
 	<changes>
 		<version>1.0.2-1</version>
-		<change>Features: <br/> - Added As Dot option to Who Is Online. <br/> - Added Global Support, making whatsapp work in ipad / ipod. <br/> - Added No Delete Limit, removing the time limit to delete a message. <br/> Fixes: <br/> - Fixed a bug where Confirm Call could be bypassed. (Does not cover contacts app yet). <br/> - Fixed one of the bugs with Who Is Calling, more reliable now, but still not perfect. </change>
+		<change>Features: - Added As Dot option to Who Is Online. - Added Global Support, making whatsapp work in ipad / ipod. - Added No Delete Limit, removing the time limit to delete a message. Fixes: - Fixed a bug where Confirm Call could be bypassed. (Does not cover contacts app yet). - Fixed one of the bugs with Who Is Calling, more reliable now, but still not perfect. </change>
 
 		<version>1.0.1-1</version>
 		<change>first release</change>
