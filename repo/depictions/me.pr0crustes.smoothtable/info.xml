@@ -25,7 +25,7 @@
 		</screenshot>
 	</screenshots>
 	<changelog>
-		<change>Initial release</change>
+		<change>Bug Fix. Should now work on 10.X.X.</change>
 	</changelog>
 	<links>
 		<name>Source Code</name>
