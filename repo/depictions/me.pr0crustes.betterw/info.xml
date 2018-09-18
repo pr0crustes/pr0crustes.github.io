@@ -1,7 +1,7 @@
 <package>
 	<id>me.pr0crustes.betterw</id>
 	<name>BetterW</name>
-	<version>1.0.2-1</version>
+	<version>1.0.3-1</version>
 	<compatibility>
 		<firmware>
 			<miniOS>10.0.0</miniOS>
@@ -11,10 +11,10 @@
 	</compatibility>
 	<dependencies></dependencies>
 	<descriptionlist>
-		<description>A bunch of whatsapp features: - No Read Receipt, that prevents others from seeing when you read a message, but still allowing you to see when others read yours. 2 - Who Is Online (BETA), that allows you to see who is online, drawing a green or red circle around their profile picture. 2.1 - As Dot, replaces the Who Is Online indicator with a dot. Who Is Online needs to be enabled. 3 - Confirm Call, that asks you to confirm your desire to call another user, preventing accidental voice / video calls.   4 - Don't Delete (BETA), will make so that when someone deletes a message, it does not delete in your device, adding a alert at the top of the message, alerting that the message was saved from oblivion.   5 - Global Support, adds whatsapp support to ipad | ipod. Should be enabled in settings.   6 - No Delete Limit, removing the time limit to delete a message. </description>
+		<description>A bunch of whatsapp features: - No Read Receipt, that prevents others from seeing when you read a message, but still allowing you to see when others read yours. 2 - Who Is Online (BETA), that allows you to see who is online, drawing a green or red circle around their profile picture. 2.1 - As Dot, replaces the Who Is Online indicator with a dot. Who Is Online needs to be enabled. 3 - Confirm Call, that asks you to confirm your desire to call another user, preventing accidental voice / video calls.   4 - Don't Delete (BETA), will make so that when someone deletes a message, it does not delete in your device, adding a alert at the top of the message, alerting that the message was saved from oblivion. 5 - No Delete Limit, allowing you to revoke messages after more than 7 minutes. 6 - Never Online, makes so that you are never online (but currenly prevents you from seing when others are online). 7 - Never Typing, so others will not be able to see when you are typing. 8 - Global Support, adds whatsapp support to ipad | ipod. Should be enabled in settings.</description>
 	</descriptionlist>	
 	<changelog>
-		<change>Features: - Added As Dot option to Who Is Online. - Added Global Support, making whatsapp work in ipad / ipod. - Added No Delete Limit, removing the time limit to delete a message. Fixes: - Fixed a bug where Confirm Call could be bypassed. (Does not cover contacts app yet). - Fixed one of the bugs with Who Is Calling, more reliable now, but still not perfect. </change>
+		<change>Added support for whatsapp 2.18.91</change>
 	</changelog>
 	<links>
 		<name>Source Code</name>
