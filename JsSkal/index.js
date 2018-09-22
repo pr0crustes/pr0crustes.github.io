@@ -60,7 +60,7 @@ function doIt() {
     canvas.height = size;
     
     canvas.getContext("2d").imageSmoothingEnabled = false;
-    canvas.scrollIntoView();
+    document.getElementById("canvas_parent").scrollIntoView();
 
     nj.images.save(inInteval, canvas);
 }
