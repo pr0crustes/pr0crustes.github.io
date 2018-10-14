@@ -1,6 +1,6 @@
 <changelog>
 	<changes>
-		<version>1.0.3-1</version>
-		<change>Added support for whatsapp 2.18.91</change>
+		<version>1.0.4-1</version>
+		<change>Added status downloader, dark mode, no status timer and call by number.</change>
 	</changes>
 </changelog>
