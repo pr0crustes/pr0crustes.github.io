@@ -42,6 +42,12 @@ function GetMF() {
     return InputAsNumber("input_mf");
 }
 
+function GetPesos() {
+    var text = document.getElementById("select_pesos").value.trim();
+    var pesos = text.split(" ").map(Number);
+    return pesos;
+}
+
 function ValidNumbers() {
     for (var i = 0; i < arguments.length; i++) {
         if (isNaN(arguments[i])) {
@@ -56,27 +62,37 @@ function Calculate() {
     let p2 = GetP2();
     let p3 = GetP3();
     let mf = GetMF();
+    let pesos = GetPesos();
+    let w1 = pesos[0];
+    let w2 = pesos[1];
+    let w3 = pesos[2];
+    let w4 = pesos[3];
 
-    if (ValidNumbers(p1, p2, p3)) {
-        let total = ((4 * p1) + (4 * p2) + (2 * p3)) / 10;
+    let p1w1 = ValidNumbers(p1, w1) ? (p1 * w1) : NaN;
+    let p2w2 = ValidNumbers(p2, w2) ? (p2 * w2) : NaN;
+    let p3w3 = ValidNumbers(p3, w3) ? (p3 * w3) : NaN;
+    let mfw4 = ValidNumbers(mf, w4) ? (mf * w4) : NaN;
+
+    if (ValidNumbers(p1w1, p2w2, p3w3, w4)) {
+        let total = (p1w1 + p2w2 + p3w3) / w4;
         SetInput("input_mf", total);
         return true;
     }
 
-    if (ValidNumbers(p1, p2, mf)) {
-        let needed_p3 = (10 * mf - (4 * p1) - (4 * p2)) / 2;
+    if (ValidNumbers(mfw4, p1w1, p2w2, w3)) {
+        let needed_p3 = (mfw4 - p1w1 - p2w2) / w3;
         SetInput("input_p3", needed_p3);
         return true;
     }
 
-    if (ValidNumbers(p2, p3, mf)) {
-        let needed_p1 = (10 * mf - (4 * p2) - (2 * p3)) / 4;
+    if (ValidNumbers(mfw4, p2w2, p3w3, w1)) {
+        let needed_p1 = (mfw4 - p2w2 - p3w3) / w1;
         SetInput("input_p1", needed_p1);
         return true;
     }
 
-    if (ValidNumbers(p1, p3, mf)) {
-        let needed_p2 = (10 * mf - (4 * p1) - (2 * p3)) / 4;
+    if (ValidNumbers(mfw4, p1w1, p3w3, w2)) {
+        let needed_p2 = (mfw4 - p1w1 - p3w3) / w2;
         SetInput("input_p2", needed_p2);
         return true;
     }
