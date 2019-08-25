@@ -28,7 +28,7 @@
 		</description>
 	</descriptionlist>	
 	<changelog>
-		<change>Updated for last version. Still working on audio2text.</change>
+		<change>Now should work on A12.</change>
 	</changelog>
 	<links>
 		<name>Source Code</name>
