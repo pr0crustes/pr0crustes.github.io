@@ -1,11 +1,11 @@
 <package>
 	<id>me.pr0crustes.betterw</id>
 	<name>BetterW</name>
-	<version>1.1.5-1</version>
+	<version>1.1.6-1</version>
 	<compatibility>
 		<firmware>
 			<miniOS>10.0.0</miniOS>
-			<maxiOS>12.4.1</maxiOS>
+			<maxiOS>13.3</maxiOS>
 			<otherVersions>unconfirmed</otherVersions>
 		</firmware>
 	</compatibility>
@@ -28,7 +28,7 @@
 		</description>
 	</descriptionlist>	
 	<changelog>
-		<change>Fixed dark mode.</change>
+		<change>Fixed dark mode and other bugs.</change>
 	</changelog>
 	<links>
 		<name>Source Code</name>
