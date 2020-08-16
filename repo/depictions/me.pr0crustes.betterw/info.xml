@@ -1,7 +1,7 @@
 <package>
 	<id>me.pr0crustes.betterw</id>
 	<name>BetterW</name>
-	<version>1.1.7-1</version>
+	<version>1.1.8-1</version>
 	<compatibility>
 		<firmware>
 			<miniOS>10.0.0</miniOS>
@@ -22,13 +22,12 @@
 			6 - Never Online (BETA), disabling your online status. Issue: Currently, it also disables your abillity to see who is online. Ussing it disables Who Is Online.  
 			7 - No Typing, not showing when you are typing but still allowing you to see when others are typing.  
 			8 - Status Downloader, allowing you to donwload status - just click the ... button when seeing one.  
-			9 - Dark Mode, a well made dark mode. Has a few bugs.  
-			10 - Global Support, adds whatsapp support to ipad | ipod. Should be enabled in settings.  
-			11 - Delete Subsequents, allowing you to easily revoke a bunch of messages.  
+			9 - Global Support, adds whatsapp support to ipad | ipod. Should be enabled in settings.  
+			10 - Delete Subsequents, allowing you to easily revoke a bunch of messages.  
 		</description>
 	</descriptionlist>	
 	<changelog>
-		<change>Fixed all features, added iOS 13 support. Working on dark mode fix.</change>
+		<change>Fixed confirm calls, removed dark mode.</change>
 	</changelog>
 	<links>
 		<name>Source Code</name>
